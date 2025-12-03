@@ -16,8 +16,8 @@ pipeline{
 		stage('Run'){
 			steps{
 			echo "RUN application in Docker Container"
-			bat "docker rm -f quirky_austin || exit0"
-			bat "docker run -d -p 5000:5000 --name quirky_austin myapp"
+			bat "docker rm -f myContainer || exit0"
+			bat "docker run -d -p 5000:5000 --name myContainer myapp"
 
 		}
 	}
@@ -33,3 +33,4 @@ post{
 	}
 
 }
+
