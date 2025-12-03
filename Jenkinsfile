@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('checkout'){
 			steps{
-				echo "Cloning repo.."
+				echo "git url."
 				git url:"https://github.com/Deekshitha-m29/Exam1202.git",branch:'main'
 			}
 		}
@@ -33,4 +33,5 @@ post{
 	}
 
 }
+
 
